@@ -1,0 +1,58 @@
+=====================================================================
+  ENVIRONMENTAL LIVABILITY ASSESSMENT — RESULTS SUMMARY
+  Quick Reference | Country-Level Analysis (2019)
+=====================================================================
+
+  DATASET
+  -------
+  Countries        : 169
+  Features         : 20 (Environmental, Economic, Social, Governance)
+  Year             : 2019
+  Missing Values   : Imputed via IterativeImputer
+  Outliers         : Flagged via IQR (retained — not removed)
+
+  PREPROCESSING
+  -------------
+  Skewed Features Transformed : log1p / Box-Cox (|skew| > 1)
+  Features Removed (VIF > 10) : Iterative VIF filtering
+  PCA (80% variance)          : ~4–5 Principal Components
+
+  CLUSTERING (K-Means, K=3)
+  -------------------------
+  Livable Clusters     : 1–2 (ranked by env. quality score)
+  Livable Countries    : ~57% of dataset
+  Label Validation     : Cluster-based F1 > Median-split F1
+
+  CLASSIFICATION
+  --------------
+  Best Model     : XGBoost (Tuned via GridSearchCV)
+  Test F1        : 0.88
+  ROC-AUC        : 0.94
+  Train/Test     : 80/20 Stratified Split
+  Cross-Val      : 5-Fold Stratified CV
+
+  SHAP + BOOTSTRAP CI
+  -------------------
+  Top Feature          : Renewable Energy %
+  Bootstrap Iterations : 200
+  Significant Features : CI lower bound > 0 (95% CI)
+  Permutation Tests    : 2,000 iterations (top 2 features)
+
+  EXTERNAL VALIDATION
+  -------------------
+  EPI 2020 Correlation : r = ~0.70+ (test-set countries)
+  Outlier Robustness   : Spearman ρ > 0.80 (rank stability)
+  GDP Partial Corr.    : Significant after controlling for GDP
+
+  OUTPUTS
+  -------
+  Figures              : 30+ publication-ready PNGs
+  LaTeX Tables         : 4 (IEEE-formatted)
+  Labeled Dataset      : country_livability_labeled_2019.csv
+  Saved Model          : best_xgb_livability_model.joblib
+
+  RUNTIME              : ~40 minutes (Google Colab / local GPU)
+
+=====================================================================
+  Generated: 2025 | Framework: Bootstrap-Validated SHAP
+=====================================================================
