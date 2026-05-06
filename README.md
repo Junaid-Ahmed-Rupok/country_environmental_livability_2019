@@ -98,7 +98,7 @@ Model predictions **correlate strongly** with independent EPI 2020 scores:
 ### Fig 25 — Main Bootstrap SHAP CI *(Main Result)*
 **Top 15 features with bootstrap 95% CI error bars — reveals only 6–8 features are statistically significant**
 
-![Main Bootstrap SHAP CI](fig25_main_bootstrap_shap_ci)
+![Main Bootstrap SHAP CI](fig25_main_bootstrap_shap_ci.png)
 
 ---
 
