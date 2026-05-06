@@ -112,21 +112,21 @@ Model predictions **correlate strongly** with independent EPI 2020 scores:
 ### Fig 17 — PCA Livability Labels *(Clustering Result)*
 **2D PCA projection with final livability labels (green/red) — clean separation of countries**
 
-![PCA Livability Labels](results/fig17_pca_livability_labels.png)
+![PCA Livability Labels](fig17_pca_livability_labels.png)
 
 ---
 
 ### Fig 27 — EPI External Validation *(Validation)*
 **Model predictions vs independent EPI 2020 scores — proves clusters capture real environmental quality**
 
-![EPI External Validation](results/fig27_epi_external_validation.png)
+![EPI External Validation](fig27_epi_external_validation.png)
 
 ---
 
 ### Fig 20 — ROC & PR Curves *(Performance)*
 **ROC and Precision-Recall curves for all 5 models — XGBoost dominance is immediately visible**
 
-![ROC PR Curves](results/fig20_roc_pr_curves.png)
+![ROC PR Curves](fig20_roc_pr_curves.png)
 
 ---
 
