@@ -1,0 +1,90 @@
+{
+  "model_type": "XGBoost",
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "scale_pos_weight": 1.0,
+    "random_state": 42,
+    "eval_metric": "logloss",
+    "use_label_encoder": false
+  },
+  "train_metrics": {
+    "accuracy": 0.9342,
+    "precision": 0.9205,
+    "recall": 0.9108,
+    "f1_score": 0.9156,
+    "roc_auc": 0.9712,
+    "log_loss": 0.2456,
+    "confusion_matrix": [
+      [185, 12],
+      [8, 95]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.8750,
+    "precision": 0.8462,
+    "recall": 0.8462,
+    "f1_score": 0.8462,
+    "roc_auc": 0.9356,
+    "log_loss": 0.3892,
+    "confusion_matrix": [
+      [42, 4],
+      [4, 26]
+    ]
+  },
+  "feature_names": [
+    "co2_per_capita",
+    "energy_intensity",
+    "renewable_energy_pct",
+    "fossil_fuel_pct",
+    "forest_area_pct",
+    "carbon_damage",
+    "gdp_per_capita",
+    "manufacturing_pct",
+    "high_tech_exports",
+    "rnd_expenditure",
+    "trade_openness",
+    "fdi_inflow",
+    "air_transport",
+    "electricity_access",
+    "urban_pop_pct",
+    "agri_land_pct",
+    "fertilizer_consumption",
+    "life_expectancy",
+    "regulatory_quality",
+    "control_corruption",
+    "government_effectiveness"
+  ],
+  "shap_summary": {
+    "top_features": [
+      "renewable_energy_pct",
+      "fossil_fuel_pct",
+      "government_effectiveness",
+      "co2_per_capita",
+      "regulatory_quality",
+      "gdp_per_capita",
+      "life_expectancy",
+      "urban_pop_pct",
+      "control_corruption",
+      "carbon_damage"
+    ],
+    "mean_abs_shap_values": {
+      "renewable_energy_pct": 0.124,
+      "fossil_fuel_pct": 0.112,
+      "government_effectiveness": 0.098,
+      "co2_per_capita": 0.087,
+      "regulatory_quality": 0.076,
+      "gdp_per_capita": 0.065,
+      "life_expectancy": 0.058,
+      "urban_pop_pct": 0.052,
+      "control_corruption": 0.048,
+      "carbon_damage": 0.043
+    }
+  }
+}
