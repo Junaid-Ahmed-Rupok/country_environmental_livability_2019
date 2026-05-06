@@ -105,7 +105,7 @@ Model predictions **correlate strongly** with independent EPI 2020 scores:
 ### Fig 35 — Combined Methodology 4-Panel *(Methodology Overview)*
 **4-panel figure (PCA + SHAP + Bootstrap CI + Permutation) — the complete framework at a glance**
 
-![Combined Methodology 4-Panel](results/fig_combined_methodology_4panel.png)
+![Combined Methodology 4-Panel](fig_combined_methodology_4panel.png)
 
 ---
 
