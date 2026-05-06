@@ -91,6 +91,45 @@ Model predictions **correlate strongly** with independent EPI 2020 scores:
 
 ---
 
+## 📊 Key Figures
+
+---
+
+### Fig 25 — Main Bootstrap SHAP CI *(Main Result)*
+**Top 15 features with bootstrap 95% CI error bars — reveals only 6–8 features are statistically significant**
+
+![Main Bootstrap SHAP CI](results/fig25_main_bootstrap_shap_ci.png)
+
+---
+
+### Fig 35 — Combined Methodology 4-Panel *(Methodology Overview)*
+**4-panel figure (PCA + SHAP + Bootstrap CI + Permutation) — the complete framework at a glance**
+
+![Combined Methodology 4-Panel](results/fig_combined_methodology_4panel.png)
+
+---
+
+### Fig 17 — PCA Livability Labels *(Clustering Result)*
+**2D PCA projection with final livability labels (green/red) — clean separation of countries**
+
+![PCA Livability Labels](results/fig17_pca_livability_labels.png)
+
+---
+
+### Fig 27 — EPI External Validation *(Validation)*
+**Model predictions vs independent EPI 2020 scores — proves clusters capture real environmental quality**
+
+![EPI External Validation](results/fig27_epi_external_validation.png)
+
+---
+
+### Fig 20 — ROC & PR Curves *(Performance)*
+**ROC and Precision-Recall curves for all 5 models — XGBoost dominance is immediately visible**
+
+![ROC PR Curves](results/fig20_roc_pr_curves.png)
+
+---
+
 ## 📊 Figure Index
 
 | # | Figure | Description |
@@ -253,7 +292,7 @@ For policy decisions, always consult official environmental metrics (EPI, UN SDG
 
 ---
 
-**Last Updated**: 2025
-**Total Notebook Runtime**: ~30–45 minutes (full pipeline)
-**Total Figures Generated**: 35+
+**Last Updated**: 2025  
+**Total Notebook Runtime**: ~30–45 minutes (full pipeline)  
+**Total Figures Generated**: 35+  
 **Total Tables**: 4 (IEEE LaTeX + CSV)
